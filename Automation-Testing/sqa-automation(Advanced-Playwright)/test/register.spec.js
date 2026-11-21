@@ -1,11 +1,9 @@
 
-const { test, expect } = require('@playwright/test');
-const { RegisterPage } = require('../pages/RegisterPage');
+import { test, expect } from '../fixtures/base.js';
 
-test('register - parabank using POM', async ({ page }) => {
 
-  // Create Page Object
-  const registerPage = new RegisterPage(page);
+test('register - parabank using POM', async ({ registerPage ,page }) => {
+
 
   // Generate unique username
   const username = 'ahmed_qa_' + Date.now();

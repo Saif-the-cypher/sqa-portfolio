@@ -1,5 +1,5 @@
 
-class RegisterPage {
+export class RegisterPage {
 
   constructor(page) {
     this.page = page;
@@ -60,4 +60,3 @@ class RegisterPage {
   }
 }
 
-module.exports = { RegisterPage };
